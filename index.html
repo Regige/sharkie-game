@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharkie</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img_Sharkie/1.Sharkie/1.IDLE/1.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/status-bar-object.class.js"></script>
+    <script src="models/endresult-object.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/fish.class.js"></script>
+    <script src="models/jelly-fish.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/poison.class.js"></script>
+    <script src="models/heart.class.js"></script>
+    <script src="models/light.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/background-object-barrier.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="js/game.js"></script>
+  </head>
+  <body onload="init()">
+    <h1 class="title">Sharkie</h1>
+
+    <div id="main-content" class="main-content">
+      <div id="start-menu" class="start-menu">
+        <div id="control-window-con"></div>
+        <img
+          src="img_Sharkie/1.Sharkie/sharkie_cha.png"
+          alt=""
+          class="start-menu-cha"
+        />
+        <div class="d-flx-col start-menu-bt-con">
+          <button
+            id="btn-start-game"
+            class="bt-game start-menu-bt"
+            onclick="startGame()"
+          >
+            START GAME
+          </button>
+          <button
+            id="btn-open-control"
+            class="bt-game start-menu-bt"
+            onclick="openControlWindow()"
+          >
+            CONTROL
+          </button>
+        </div>
+      </div>
+      <canvas id="canvas" width="720" height="480"></canvas>
+      <div id="expand-bt" class="expand-bt d-none" onclick="fullscreen()"></div>
+      <div id="sound-btn" class="sound-btn d-none" onclick="setSound()"></div>
+      <button
+        id="try-again-bt"
+        class="bt-game try-again-bt d-none"
+        onclick="location.reload()"
+      >
+        TRY AGAIN
+      </button>
+      <div id="ctrl-bt-main-con" class="ctrl-bt-main-con"></div>
+    </div>
+    <div class="portrait-mode">
+      <div>
+        <img
+          src="img_Sharkie/6.Botones/rotate.svg"
+          alt=""
+          class="portrait-mode-img"
+        />
+        <img
+          src="img_Sharkie/6.Botones/mobile.svg"
+          alt=""
+          class="portrait-mode-img"
+        />
+      </div>
+      <h2>rotate to landscape mode</h2>
+    </div>
+  </body>
+</html>

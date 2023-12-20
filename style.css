@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'luckiest-guy';
+    src: url('img_Sharkie/5.Font/Luckiest_Guy/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'luckiest-guy', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img_Sharkie/3. Background/Layers/4.Fondo 2/D.png'),
+                    url('img_Sharkie/3. Background/Layers/3.Fondo 1/D.png'),
+                    url('img_Sharkie/3. Background/Layers/5. Water/D.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+canvas {
+    background-color: black;
+    border-radius: 10px;
+    display: block;
+}
+
+
+h1 {
+    font-size: 64px;
+    text-shadow: 4px 4px 8px rgba(0,0,0, 0.25);
+    position: absolute;
+    top: 24px;
+}
+
+h1, h2 {
+    color: white;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 48;
+}
+
+
+.main-content {
+    position: relative;
+}
+
+
+.expand-bt {
+    background-image: url('img_Sharkie/6.Botones/expand_white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.expand-bt:hover {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    top: 24px;
+    right: 24px;
+}
+
+.sound-btn {
+    background-image: url('img_Sharkie/6.Botones/loud.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 23px;
+    right: 70px;
+}
+.sound-btn:hover {
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    top: 22px;
+    right: 69px;
+}
+
+
+.start-menu {
+    border-radius: 10px;
+    background-image: url('img_Sharkie/3. Background/Layers/2. Floor/D1.png'),
+                    url('img_Sharkie/3. Background/Layers/3.Fondo 1/D.png'),
+                    url('img_Sharkie/3. Background/Layers/4.Fondo 2/D.png'),
+                    url('img_Sharkie/3. Background/Layers/5. Water/D.png');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    height: 480px;
+    width: 720px;
+    position: absolute;
+}
+
+.start-menu-cha {
+    position: absolute;
+    left: 72px;
+    top: 90px;
+    transform: rotate(350deg);
+    width: 272px;
+}
+
+.start-menu-bt-con {
+    justify-content: center;
+    gap: 32px;
+}
+
+.start-menu-bt {
+    margin-right: 72px;
+}
+
+.bt-game {
+    border-radius: 12px;
+    background-color: #367FBD;
+    border: 2px solid white;
+    color: white;
+    font-family: 'luckiest-guy', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 16px 24px 8px;
+}
+
+.bt-game:hover {
+    cursor: pointer;
+    background-color: #3163B3;
+}
+
+
+.control-window {
+    background-image: url('img_Sharkie/3. Background/Layers/5. Water/D.png');
+    border-radius: 10px;
+    height: 400px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 640px;
+    z-index: 1;
+}
+
+.ctrl-window-close-con {
+    margin: 16px 16px 0 0;
+    display: flex;
+    justify-content: end;
+}
+
+.ctrl-window-close {
+    height: 40px;
+    width: 40px;
+    background-image: url('img_Sharkie/6.Botones/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ctrl-window-close:hover {
+    cursor: pointer;
+    background-color: #3AAFCD;
+    border-radius: 50%;
+}
+
+.ctrl-window-con {
+    height: calc(100% - 104px);
+}
+
+.ctrl-window-images {
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-bottom: 40px;
+}
+
+.ctrl-window-text {
+    height: 100%;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.control-img-1 {
+    height: 101.5px;
+}
+.control-img-2-3 {
+    height: 48px;
+}
+
+.ctrl-text-1 {
+    margin: 39px 0 39px 48px;
+}
+.ctrl-text-2 {
+    margin: 12px 0 12px 48px;
+}
+.ctrl-text-3 {
+    margin: 0 0 0 48px;
+}
+
+
+.try-again-bt {
+    position: absolute;
+    bottom: 12%;
+    right: 33%;
+}
+
+
+.portrait-mode {
+    display: none;
+}
+.portrait-mode-img {
+    height: 72px;
+    padding: 24px 8px;
+} 
+
+
+.ctrl-bt-main-con {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+}
+.ctrl-bt-con-left {
+    padding-left: 24px;
+}
+.ctrl-bt-con-right {
+    padding-right: 24px;
+    gap: 16px;
+}
+.ctrl-bt {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ctrl-bt:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.5);
+}
+.ctrl-bt-up {
+    background-image: url('img_Sharkie/6.Botones/up_white.svg');
+    background-size: 85%;
+    margin-bottom: 16px;
+}
+.ctrl-bt-down {
+    background-image: url('img_Sharkie/6.Botones/down_white.svg');
+    background-size: 85%;
+}
+.ctrl-bt-left {
+    background-image: url('img_Sharkie/6.Botones/left_white.svg');
+    background-size: 56%;
+    margin-top: 16px;
+}
+.ctrl-bt-right {
+    background-image: url('img_Sharkie/6.Botones/right_white.svg');
+    background-size: 56%;
+    margin-top: 16px;
+}
+.ctrl-img {
+    height: 28px;
+    border-radius: 50%;
+}
+.ctrl-img:active {
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.5);
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+.d-flx {
+    display: flex;
+}
+
+.d-flx-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100vh;
+    }
+    .start-menu {
+        width: 100vh;
+    }
+    .title {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+        width: auto;
+    }
+    .start-menu {
+        height: 100vh;
+        width: auto;
+        aspect-ratio: auto 720 / 480;
+    }
+    .start-menu-cha {
+        width: 254px;
+        left: 48px;
+    }
+    .start-menu-bt {
+        margin-right: 40px;
+    }
+    .control-window {
+        height: auto;
+        width: auto;
+        aspect-ratio: auto 720 / 480;
+        right: 0;
+        top: 0;
+    }
+    .bt-game {
+        font-size: 30px;
+        padding: 14px 20px 6px;
+    }
+    .title {
+        display: none;
+    }
+    .expand-bt {
+        display: none;
+    }
+    .sound-btn {
+        right: 25px;
+    }
+    .sound-btn:hover {
+        right: 24px;
+    }
+    .ctrl-bt-main-con {
+        display: flex;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width: 720px) {
+    .portrait-mode {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .portrait-mode h2 {
+        text-align: center;
+    }
+    .main-content {
+       display: none;
+    }
+
+}
